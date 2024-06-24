@@ -1,0 +1,44 @@
+.demo-content {
+    position: relative;
+    min-height: 100px;
+    overflow: scroll;
+}
+
+.aggravate {
+    background-color: #f2f2f2;
+    padding: 2px 6px 8px;
+    border-radius: 6px;
+}
+
+.mainPNG {
+    width: 500px;
+    height: auto;
+}
+
+.no-sidebar .theme-default-content {
+    text-align: center;
+}
+
+/* quickStart 按钮样式 */
+.quickStart {
+    margin-top: 100px;
+    display: inline-block;
+    border-radius: 12px;
+    border: 4px solid #ccc;
+    padding: 16px 36px 20px;
+    font-size: 24px;
+    background-color: #3eaf7c;
+    color: #fff;
+    text-decoration: none !important;
+    transition: all .2s;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 10px 0px;
+}
+
+.quickStart:hover {
+    background-color: #007bff;
+    text-decoration: none !important;
+    box-shadow: rgba(0, 0, 0, .669) 2px 8px 10px 0px;
+    transform: translateY(-5px);
+}

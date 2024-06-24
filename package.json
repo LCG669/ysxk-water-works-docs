@@ -1,0 +1,31 @@
+{
+  "name": "ysxk-water-works-docs",
+  "version": "0.3.5",
+  "description": "云昇新控水厂组件UI库",
+  "keywords": [
+    "vue",
+    "vue2",
+    "water",
+    "works",
+    "water-works",
+    "water works",
+    "ysxk",
+    "docs",
+    "文档",
+    "云昇新控",
+    "水厂"
+  ],
+  "author": "刘朝刚",
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.9.10"
+  },
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "dependencies": {
+    "vuepress-plugin-demo-container": "^0.2.0",
+    "ysxk-water-works": "^0.3.5"
+  }
+}
