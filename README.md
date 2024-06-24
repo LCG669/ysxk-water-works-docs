@@ -14,3 +14,9 @@ yarn docs:dev
 ```
 yarn docs:build
 ```
+
+### 打包并推送
+使用 Git Bash Here 在根目录运行
+```
+sh deploy.sh
+```

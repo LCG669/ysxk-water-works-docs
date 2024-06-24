@@ -6,6 +6,11 @@ module.exports = {
     description: '云昇新控水厂UI',
     base: '/ysxk-water-works-docs/',
     port: '778',
+    locales: {
+        '/': {
+          lang: 'zh-CN'
+        }
+    },
     themeConfig: {
         sidebarDepth: 2,
         nav: [
