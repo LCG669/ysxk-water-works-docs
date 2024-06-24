@@ -2,9 +2,9 @@
 
 module.exports = {
     theme: '',
-    title: 'ysxk-water-works',
+    title: 'ysxk-water-works-docs',
     description: '云昇新控水厂UI',
-    base: '/',
+    base: '/ysxk-water-works-docs/',
     port: '778',
     themeConfig: {
         sidebarDepth: 2,
