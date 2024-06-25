@@ -27,6 +27,6 @@
   "dependencies": {
     "overlayscrollbars": "^2.9.1",
     "vuepress-plugin-demo-container": "^0.2.0",
-    "ysxk-water-works": "^0.3.5"
+    "ysxk-water-works": "^0.3.6"
   }
 }
