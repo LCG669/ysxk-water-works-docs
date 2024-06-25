@@ -25,8 +25,9 @@ export default ({
             // 找到所有 .demo-content 元素
             
             const demoContentElements = document.querySelectorAll('.demo-content')
+            const sidebarElements = document.querySelectorAll('.sidebar')
 
-            demoContentElements.forEach(el => {
+            const addScrollBar = el => {
                 // 检查元素是否已经初始化过 OverlayScrollbars  
                 if (!el.dataset.isScrollbar) {
                     // 初始化 OverlayScrollbars  
@@ -35,6 +36,13 @@ export default ({
                     // 添加自定义属性以标记已初始化
                     el.dataset.isScrollbar = true
                 }
+            }
+
+            demoContentElements.forEach(el => {
+                addScrollBar(el)
+            })
+            sidebarElements.forEach(el => {
+                addScrollBar(el)
             })
         },
     })
