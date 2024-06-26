@@ -8990,10 +8990,10 @@ yargs@^13.3.2:
     y18n "^4.0.0"
     yargs-parser "^13.1.2"
 
-ysxk-water-works@^0.3.6:
-  version "0.3.6"
-  resolved "https://registry.npmjs.org/ysxk-water-works/-/ysxk-water-works-0.3.6.tgz#1d6a83cd7560c7f84eb39ed59b7cc8e0927fabd3"
-  integrity sha512-FP1eLdU1siXCY+fx4iPx2iCxLt0ikLLq1zrcVcThZSOhYfObOgJgOcEE43zEADeS0WOYJXJPqy+ZYsohOAR27g==
+ysxk-water-works@^0.3.8:
+  version "0.3.8"
+  resolved "https://registry.npmjs.org/ysxk-water-works/-/ysxk-water-works-0.3.8.tgz#65fb2d5cc2b61e211879b828860466552856ecfe"
+  integrity sha512-KjQFBJ+ISkoteIfDRX6AOjfk2NHAzVlyXH9uMmsAPX4ODqKFqZW1npg37h5v5gIfJ1z0etKQ7/VStsiOg5CXdw==
   dependencies:
     core-js "^3.8.3"
     less "^3.9.0"

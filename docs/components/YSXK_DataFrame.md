@@ -826,6 +826,8 @@ type 为 AgitatorState 时，可以添加图片，用以表示设备当前状态
 ### AgitatorState 搅拌机状态
 
 img图片使用position: fixed定位，注意使用transform: scale进行配合，例如YSXK_ScaleDiv组件
+<br />
+故障优先级大于正常和停止
 
 ::: demo
 ``` vue
@@ -854,11 +856,14 @@ export default {
                     {
                         name: '1#机器', // 标题
                         data : 'true', // 值
-                        dataX: '', // 值 优先级高于data
+                        dataX: 'true', // 值 优先级高于data
                         type: 'AgitatorState', // 数据类型
+                        // 运行 为 img
                         // 地址替换为你自己的地址
                         // 如果图片在前端assets文件夹呢，属于静态资源，需要使用require方法
-                        img: require('../.vuepress/public/images/jbj-green.png'),
+                        img : require('../.vuepress/public/images/jbj-green.png'),
+                        // 故障 为 imgX
+                        imgX: require('../.vuepress/public/images/jbj-orange.png'),
                         // 图片位置
                         location: {
                             top: '12px',

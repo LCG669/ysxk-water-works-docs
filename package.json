@@ -1,6 +1,6 @@
 {
   "name": "ysxk-water-works-docs",
-  "version": "0.3.6",
+  "version": "0.3.8",
   "description": "云昇新控水厂组件UI库",
   "keywords": [
     "vue",
@@ -27,6 +27,6 @@
   "dependencies": {
     "overlayscrollbars": "^2.9.1",
     "vuepress-plugin-demo-container": "^0.2.0",
-    "ysxk-water-works": "^0.3.6"
+    "ysxk-water-works": "^0.3.8"
   }
 }
