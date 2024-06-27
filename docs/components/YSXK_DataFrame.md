@@ -825,7 +825,7 @@ type 为 AgitatorState 时，可以添加图片，用以表示设备当前状态
 
 ### AgitatorState 搅拌机状态
 
-img图片使用position: fixed定位，注意使用transform: scale进行配合，例如YSXK_ScaleDiv组件
+img图片使用position: fixed定位，注意使用 transform: scale(100.000001%); 或者 transform: rotate(360deg); 进行配合，例如YSXK_ScaleDiv组件
 <br />
 故障优先级大于正常和停止
 
@@ -889,7 +889,8 @@ export default {
     height: 100%;
     top: 0;
     left: 0;
-    transform: scale(100.000001%);
+    transform: rotate(360deg);
+    /* transform: scale(100.000001%); */
 }
 </style>
 ```
