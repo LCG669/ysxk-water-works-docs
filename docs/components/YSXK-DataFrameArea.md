@@ -1,6 +1,6 @@
-# YSXK_DataFrameArea 数据框区域
+# YSXK-DataFrameArea 数据框区域
 
-YSXK_DataFrameArea 数据框区域 是 YSXK_DataFrame 数据框 带标题和分界线版本，多了一个areaData层级不同，其他API完全相同
+YSXK-DataFrameArea 数据框区域 是 YSXK-DataFrame 数据框 带标题和分界线版本，多了一个areaData层级不同，其他API完全相同
 <br />
 所有数据需要传递字符串类型
 <br />
@@ -15,7 +15,7 @@ YSXK_DataFrameArea 数据框区域 是 YSXK_DataFrame 数据框 带标题和分�
 <template>
 <div style="height: 300px;">
     <!-- 复制时注意！这里 aData 改为了 bData -->
-    <YSXK_DataFrameArea
+    <YSXK-DataFrameArea
         :position="bData.position"
         :areaData="bData.areaData"
         :maxWidth="'480px'"
@@ -137,4 +137,4 @@ export default {
 
 ## type 状态
 
-YSXK_DataFrameArea 数据框 区域和YSXK_DataFrame 数据框 规则相同，详情见：[type 状态](/components/YSXK_DataFrame.html#type-状态)
+YSXK-DataFrameArea 数据框 区域和YSXK-DataFrame 数据框 规则相同，详情见：[type 状态](/components/YSXK-DataFrame.html#type-状态)

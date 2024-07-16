@@ -1,4 +1,4 @@
-# YSXK_TimeUpda 数据更新时间
+# YSXK-TimeUpda 数据更新时间
 
 ## 代码演示
 
@@ -9,7 +9,7 @@
 ::: demo
 ``` vue
 <template>
-    <YSXK_TimeUpda :recentTime="recentTime" />
+    <YSXK-TimeUpda :recentTime="recentTime" />
 </template>
 
 <script>
@@ -31,7 +31,7 @@ seat：center
 ::: demo
 ``` vue
 <template>
-    <YSXK_TimeUpda :recentTime="timeUpdaData.recentTime" :seat="timeUpdaData.seat" />
+    <YSXK-TimeUpda :recentTime="timeUpdaData.recentTime" :seat="timeUpdaData.seat" />
 </template>
 
 <script>
@@ -56,7 +56,7 @@ seat：bottom
 ::: demo
 ``` vue
 <template>
-    <YSXK_TimeUpda :recentTime="timeUpdaData.recentTime" :seat="timeUpdaData.seat" />
+    <YSXK-TimeUpda :recentTime="timeUpdaData.recentTime" :seat="timeUpdaData.seat" />
 </template>
 
 <script>

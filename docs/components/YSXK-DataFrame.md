@@ -1,6 +1,6 @@
-# YSXK_DataFrame 数据框
+# YSXK-DataFrame 数据框
 
-YSXK_DataFrame 数据框预设了多种数据格式，可以满足水厂业务复杂的数据转换与显示
+YSXK-DataFrame 数据框预设了多种数据格式，可以满足水厂业务复杂的数据转换与显示
 <br />
 所有数据需要传递字符串类型
 <br />
@@ -13,7 +13,7 @@ YSXK_DataFrame 数据框预设了多种数据格式，可以满足水厂业务�
 ::: demo
 ``` vue
 <template>
-    <YSXK_DataFrame
+    <YSXK-DataFrame
         :position="aData.position"
         :columnData="aData.columnData"
     />
@@ -55,7 +55,7 @@ export default {
 ::: demo
 ``` vue
 <template>
-    <YSXK_DataFrame
+    <YSXK-DataFrame
         v-for="(item, i) in aData"
         :key="i"
         :position="item.position"
@@ -135,7 +135,7 @@ export default {
 ::: demo
 ``` vue
 <template>
-    <YSXK_DataFrame
+    <YSXK-DataFrame
         :position="aData.position"
         :columnData="aData.columnData"
     />
@@ -177,7 +177,7 @@ export default {
 ::: demo
 ``` vue
 <template>
-    <YSXK_DataFrame
+    <YSXK-DataFrame
         :position="aData.position"
         :columnData="aData.columnData"
     />
@@ -238,7 +238,7 @@ export default {
 ::: demo
 ``` vue
 <template>
-    <YSXK_DataFrame
+    <YSXK-DataFrame
         :position="aData.position"
         :columnData="aData.columnData"
     />
@@ -296,7 +296,7 @@ maxWidth设置数据框宽度（例如480px），minWidth设置每一条数据�
 ::: demo
 ``` vue
 <template>
-    <YSXK_DataFrame
+    <YSXK-DataFrame
         :position="aData.position"
         :columnData="aData.columnData"
         :maxWidth="'480px'"
@@ -365,7 +365,7 @@ export default {
 ::: demo
 ``` vue
 <template>
-    <YSXK_DataFrame
+    <YSXK-DataFrame
         :position="aData.position"
         :columnData="aData.columnData"
         :maxWidth="'300px'"
@@ -435,7 +435,7 @@ export default {
 ::: demo
 ``` vue
 <template>
-    <YSXK_DataFrame
+    <YSXK-DataFrame
         :position="aData.position"
         :columnData="aData.columnData"
         :maxWidth="'600px'"
@@ -515,7 +515,7 @@ type 有多种不同的参数，解决不同的业务，需要按需传递
 ::: demo
 ``` vue
 <template>
-    <YSXK_DataFrame
+    <YSXK-DataFrame
         :position="aData.position"
         :columnData="aData.columnData"
     />
@@ -564,7 +564,7 @@ export default {
 ::: demo
 ``` vue
 <template>
-    <YSXK_DataFrame
+    <YSXK-DataFrame
         :position="aData.position"
         :columnData="aData.columnData"
     />
@@ -627,7 +627,7 @@ data 为 'false' 停止
 ::: demo
 ``` vue
 <template>
-    <YSXK_DataFrame
+    <YSXK-DataFrame
         :position="aData.position"
         :columnData="aData.columnData"
     />
@@ -694,7 +694,7 @@ data2 为 'false' 手动
 ::: demo
 ``` vue
 <template>
-    <YSXK_DataFrame
+    <YSXK-DataFrame
         :position="aData.position"
         :columnData="aData.columnData"
     />
@@ -761,7 +761,7 @@ dataX2 为 'true' 浊度模式
 ::: demo
 ``` vue
 <template>
-    <YSXK_DataFrame
+    <YSXK-DataFrame
         :position="aData.position"
         :columnData="aData.columnData"
     />
@@ -825,7 +825,7 @@ type 为 AgitatorState 时，可以添加图片，用以表示设备当前状态
 
 ### AgitatorState 搅拌机状态
 
-img图片使用position: fixed定位，注意使用 transform: scale(100.000001%); 或者 transform: rotate(360deg); 进行配合，例如YSXK_ScaleDiv组件
+img图片使用position: fixed定位，注意使用 transform: scale(100.000001%); 或者 transform: rotate(360deg); 进行配合，例如YSXK-ScaleDiv组件
 <br />
 故障优先级大于正常和停止
 
@@ -833,7 +833,7 @@ img图片使用position: fixed定位，注意使用 transform: scale(100.000001%
 ``` vue
 <template>
 <div class="box">
-    <YSXK_DataFrame
+    <YSXK-DataFrame
         :position="aData.position"
         :columnData="aData.columnData"
     />
@@ -907,4 +907,4 @@ export default {
 
 ## 注意事项
 
-如果用于普通文档流，不定位使用，需要对YSXK_DataFrame组件设置：position: static;
+如果用于普通文档流，不定位使用，需要对YSXK-DataFrame组件设置：position: static;

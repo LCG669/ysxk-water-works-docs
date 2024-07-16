@@ -1,16 +1,16 @@
-# YSXK_ScaleDiv 缩放内容
+# YSXK-ScaleDiv 缩放内容
 
-YSXK_ScaleDiv通常用于view页面组件最顶层，通过缩放整个内容，进行分辨率适配，比较暴力
+YSXK-ScaleDiv通常用于view页面组件最顶层，通过缩放整个内容，进行分辨率适配，比较暴力
 
 ## 代码演示
 ::: demo
 ``` vue
 <template>
-    <YSXK_ScaleDiv>
+    <YSXK-ScaleDiv>
         ...其他内容
         <br />
         改变浏览器宽高进行观察
-    </YSXK_ScaleDiv>
+    </YSXK-ScaleDiv>
 </template>
 ```
 :::

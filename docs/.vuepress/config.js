@@ -33,10 +33,10 @@ module.exports = {
                 title: '组件',   // 必要的
                 collapsable: false, // 可选的, 默认值是 true,
                 children: [
-                    '/components/YSXK_TimeUpda.md',
-                    '/components/YSXK_ScaleDiv.md',
-                    '/components/YSXK_DataFrame.md',
-                    '/components/YSXK_DataFrameArea.md',
+                    '/components/YSXK-TimeUpda.md',
+                    '/components/YSXK-ScaleDiv.md',
+                    '/components/YSXK-DataFrame.md',
+                    '/components/YSXK-DataFrameArea.md',
                 ]
             },
         ]
