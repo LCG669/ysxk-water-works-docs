@@ -504,7 +504,7 @@ export default {
 
 type 有多种不同的参数，解决不同的业务，需要按需传递
 
-### sludgeDischargeState 排泥状态
+### SludgeDischargeState 排泥状态
 
 排泥中 || 未排泥
 <br />
@@ -537,12 +537,12 @@ export default {
                     {
                         name: '1#机器', // 标题
                         data: 'true', // 值
-                        type: 'sludgeDischargeState', // 数据类型
+                        type: 'SludgeDischargeState', // 数据类型
                     },
                     {
                         name: '2#机器', // 标题
                         data: 'false', // 值
-                        type: 'sludgeDischargeState', // 数据类型
+                        type: 'SludgeDischargeState', // 数据类型
                     },
                 ],
             }
@@ -553,7 +553,7 @@ export default {
 ```
 :::
 
-### sludgeDischargeMode 排泥模式
+### SludgeDischargeMode 排泥模式
 
 自动 || 手动
 <br />
@@ -586,22 +586,106 @@ export default {
                     {
                         name: '1#机器', // 标题
                         data: 'true', // 值
-                        type: 'sludgeDischargeMode', // 数据类型
+                        type: 'SludgeDischargeMode', // 数据类型
                     },
                     {
                         name: '2#机器', // 标题
                         data: 'false', // 值
-                        type: 'sludgeDischargeMode', // 数据类型
+                        type: 'SludgeDischargeMode', // 数据类型
                     },
                     {
                         name: '1#机器', // 标题
                         data: '1', // 值
-                        type: 'sludgeDischargeMode', // 数据类型
+                        type: 'SludgeDischargeMode', // 数据类型
                     },
                     {
                         name: '2#机器', // 标题
                         data: '0', // 值
-                        type: 'sludgeDischargeMode', // 数据类型
+                        type: 'SludgeDischargeMode', // 数据类型
+                    },
+                ],
+            }
+        }
+    },
+}
+</script>
+```
+:::
+
+### ValveState 电动阀状态
+
+0 离线
+<br />
+1 全开
+<br />
+2 全关
+<br />
+3 打开中
+<br />
+4 关闭中
+<br />
+5 半开
+<br />
+6 故障
+
+::: demo
+``` vue
+<template>
+    <YSXK-DataFrame
+        :position="aData.position"
+        :columnData="aData.columnData"
+        :maxWidth="'400px'"
+        :minWidth="'50%'"
+    />
+</template>
+
+<script>
+export default {
+    data() {
+        return {
+            // 假设这是水泵数据
+            aData: {
+                // 数据框位置
+                position: {
+                    top: '12px',
+                    left: '12px'
+                },
+                // 每一条数据
+                columnData: [
+                    {
+                        name: '0#电动阀', // 标题
+                        data: '0', // 值
+                        type: 'ValveState', // 数据类型
+                    },
+                    {
+                        name: '1#电动阀', // 标题
+                        data: '1', // 值
+                        type: 'ValveState', // 数据类型
+                    },
+                    {
+                        name: '2#电动阀', // 标题
+                        data: '2', // 值
+                        type: 'ValveState', // 数据类型
+                    },
+                    {
+                        name: '3#电动阀', // 标题
+                        data: '3', // 值
+                        type: 'ValveState', // 数据类型
+                    },
+                    {
+                        name: '4#电动阀', // 标题
+                        data: '4', // 值
+                        type: 'ValveState', // 数据类型
+                    },
+                    {
+                        name: '5#电动阀', // 标题
+                        data: '5', // 值
+                        type: 'ValveState', // 数据类型
+                    },
+                    {
+                        name: '6#电动阀', // 标题
+                        data: '6', // 值
+                        type: 'ValveState', // 数据类型
                     },
                 ],
             }
@@ -746,7 +830,7 @@ export default {
 ```
 :::
 
-### meteringPumpMode 计量泵控制模式
+### MeteringPumpMode 计量泵控制模式
 
 手动 || 流量模式 || 浊度模式
 <br />
@@ -785,21 +869,21 @@ export default {
                         data : 'false', // 值
                         dataX: '', // 值
                         dataX2: '', // 值
-                        type: 'meteringPumpMode', // 数据类型
+                        type: 'MeteringPumpMode', // 数据类型
                     },
                     {
                         name: '2#机器', // 标题
                         data : '', // 值
                         dataX: 'true', // 值
                         dataX2: '', // 值
-                        type: 'meteringPumpMode', // 数据类型
+                        type: 'MeteringPumpMode', // 数据类型
                     },
                     {
                         name: '3#机器', // 标题
                         data : '', // 值
                         dataX: '', // 值
                         dataX2: 'true', // 值
-                        type: 'meteringPumpMode', // 数据类型
+                        type: 'MeteringPumpMode', // 数据类型
                     },
                     // 测试优先级
                     {
@@ -807,7 +891,7 @@ export default {
                         data : 'false', // 值
                         dataX: 'true', // 值
                         dataX2: 'true', // 值
-                        type: 'meteringPumpMode', // 数据类型
+                        type: 'MeteringPumpMode', // 数据类型
                     },
                 ],
             }
@@ -819,9 +903,15 @@ export default {
 :::
 
 ## img 图片
-type 为 AgitatorState 时，可以添加图片，用以表示设备当前状态
+type 为 ValveState、AgitatorState 时，可以添加图片，方便用户区分设备当前状态
 <br />
-背景图为红色，添加绿色图片覆盖
+背景图为红色：
+<br />
+img green绿色 运行、imgX orange橙色 故障、imgX2 gray灰色 离线
+<br />
+图片显示顺序优先级：imgX2 > imgX > img
+<br />
+常用 绿色、橙色。灰色有可能不存在
 
 ### AgitatorState 搅拌机状态
 
