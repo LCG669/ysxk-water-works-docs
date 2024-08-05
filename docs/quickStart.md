@@ -9,6 +9,11 @@ yarn add ysxk-water-works
 npm i ysxk-water-works
 ```
 
+### 更新到最新版的UI库
+```
+yarn upgrade ysxk-water-works
+```
+
 ## 使用
 
 ### 全局配置
